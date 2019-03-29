@@ -1,3 +1,5 @@
+import js.Browser.document;
+import js.Lib.require;
 import openfl.display.Loader;
 import openfl.display.Sprite;
 import openfl.display.Stage;
@@ -10,13 +12,13 @@ class App extends Sprite
 		super();
 		
 		var icon = new Loader();
-		icon.load(new URLRequest("./icon.png"));
+		icon.load(new URLRequest(require("./assets/icon.png")));
 		addChild(icon);
 	}
 	
 	static function main()
 	{
 		var stage = new Stage (550, 400, 0xFFFFFF, App);
-		js.Browser.document.body.appendChild (stage.element);
+		document.body.appendChild (stage.element);
 	}
 }

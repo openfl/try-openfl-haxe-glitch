@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "devDependencies": {
+    "file-loader": "^3.0.1",
     "haxe": "^5.0.10",
     "haxe-loader": "^0.5.0",
     "openfl": "latest",

@@ -20,6 +20,10 @@ module.exports = {
 			{
 				test: /\.swf$/,
 				loader: 'swf-loader'
+			},
+			{
+				test: /\.(png|jpg|gif)$/,
+				loader: 'file-loader'
 			}
 		]
 	}
